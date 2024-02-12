@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellcome..!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="navigation">
+        <input type="checkbox" id="check" />
+        <label for="check" class="check_btn">
+          <ion-icon name="menu"></ion-icon>
+        </label>
+        <label class="logo">
+          <img src="img/Logo_Login.png" />
+        </label>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="btnLogin-popup">Login</button></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Navbar End -->
+    <!-- Login Start -->
+    <div class="container">
+      <span class="icon-close"
+        ><i class="fa-solid fa-xmark" id="İconX"></i
+      ></span>
+      <div class="Form login-form">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Enter Your Username*" required />
+            <label for="#">Username</label>
+          </div>
+          <div class="input-box">
+            <i
+              class="fa-solid fa-eye-slash"
+              id="toggle-icon"
+              onclick="togglePasswordVisibility()"
+            ></i>
+            <input
+              type="password"
+              placeholder="Enter Your Password*"
+              id="password"
+              required
+            />
+            <label for="#">Password</label>
+          </div>
+          <div class="forgot-section">
+            <span><input type="checkbox" id="checked" />Remember Me</span>
+            <span><a href="#">Forgot Password ?</a></span>
+          </div>
+          <button class="btn">Login</button>
+        </form>
+        <p>Or Sign up using</p>
+        <div class="social-media">
+          <ion-icon name="logo-discord" class="dc"></ion-icon>
+          <ion-icon name="logo-twitch" class="tw"></ion-icon>
+          <ion-icon name="logo-instagram" class="insta"></ion-icon>
+        </div>
+        <p class="RegisteBtn RegiBtn"><a href="#">Register Now</a></p>
+      </div>
+      <!-- Login End -->
+      <!-- Register Start -->
+      <div class="Form Register-form">
+        <h2>Register</h2>
+        <form action="#">
+          <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Enter Your Username*" required />
+            <label for="#">Username</label>
+          </div>
+          <div class="input-box">
+            <i
+              class="fa-solid fa-eye-slash"
+              id="toggle-iconTwo"
+              onclick="togglePasswordVisibilityTwo()"
+            ></i>
+            <input
+              type="password"
+              placeholder="Enter Your Password*"
+              id="passwordShow"
+              required
+            />
+            <label for="#">Password</label>
+          </div>
+          <div class="input-box">
+            <i
+              class="fa-solid fa-eye-slash"
+              id="toggle-iconTree"
+              onclick="togglePasswordVisibilityTree()"
+            ></i>
+            <input
+              type="password"
+              placeholder="Enter Your Password*"
+              id="passwordHide"
+              required
+            />
+            <label for="#">Password</label>
+          </div>
+          <div class="forgot-section">
+            <span><input type="checkbox" id="checked1" />Remember Me</span>
+            <span><a href="#">Forgot Password ?</a></span>
+          </div>
+          <button class="btn" class="loginBtn">Login now</button>
+        </form>
+        <p>Or Sign up using</p>
+        <div class="social-media">
+          <ion-icon name="logo-discord" class="dc"></ion-icon>
+          <ion-icon name="logo-twitch" class="tw"></ion-icon>
+          <ion-icon name="logo-instagram" class="insta"></ion-icon>
+        </div>
+        <p class="LoginBtn"><a href="#">Login Now</a></p>
+      </div>
+    </div>
+    <div class="footer">
+     <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Coding.Aksa All right reserved.</p>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/furkan-aksa-118a4a2a5/"><ion-icon name="logo-linkedin" class="linkedin"></ion-icon></a>
+        <a href="https://github.com/codingaksa"><ion-icon name="logo-github" class="gitHub"></ion-icon></a>
+        <a href="https://discord.com/channels/furkanaksa"><ion-icon name="logo-discord" class="dc"></ion-icon></a>
+        <a href="https://www.instagram.com/furkn.aksa/"><ion-icon name="logo-instagram" class="insta"></ion-icon></a>
+      </div>
+     </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
